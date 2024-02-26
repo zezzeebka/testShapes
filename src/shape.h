@@ -1,5 +1,3 @@
-#ifndef SHAPE_H
-#define SHAPE_H
 #pragma once
 #include "SFML/Graphics/Color.hpp"
 #include "SFML/Graphics/RenderWindow.hpp"
@@ -13,5 +11,3 @@ protected:
     sf::Color _color;
 };
 
-
-#endif // SHAPE_H

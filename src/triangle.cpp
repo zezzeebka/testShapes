@@ -1,8 +1,10 @@
 #include "triangle.h"
 #include "SFML/Graphics/ConvexShape.hpp"
 
-Triangle::Triangle(float x, float y, float x1, float y1, float x2, float y2, float x3, float y3)
-    : Shape(x, y), _dotX1(x1), _dotY1(y1), _dotX2(x2), _dotY2(y2), _dotX3(x3), _dotY3(y3){}
+Point::Point(int x, int y) : _x(x), _y(y){}
+
+Triangle::Triangle(int x, int y, Point dot1, Point dot2, Point dot3)
+    : Shape(x, y), _dotX1(dot1._x), _dotY1(dot1._y), _dotX2(dot2._x), _dotY2(dot2._y), _dotX3(dot3._x), _dotY3(dot3._y){}
 
 void Triangle::draw(sf::RenderWindow& window) const {
     sf::ConvexShape triangle;

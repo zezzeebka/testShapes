@@ -1,5 +1,3 @@
-#ifndef CIRCLE_H
-#define CIRCLE_H
 #pragma once
 #include "shape.h"
 
@@ -11,5 +9,3 @@ public:
 private:
     int _radius;
 };
-
-#endif // CIRCLE_H
